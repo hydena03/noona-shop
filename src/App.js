@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+import ProductAll from "./page/ProductAll";
+import Login from "./page/Login";
+import ProductDetail from "./page/ProductDetail";
+import Navbar from "./component/Navbar";
+
+//1. 전체상품페이지, 로그인페이지, 상세페이지
+//1-1. 네브바 만들기
+//2. 전체상품페이지-전체상품
+//3. 로그인페이지클릭-로그인페이지
+//3. 상품디테일(로그아웃상태)-로그인페이지
+//4. 로그인 돼 있을시, 상품디테일 확인가능
+//5. 로그아웃 버튼 누르면 로그아웃 됨
+//6. 로그아웃 상태에서는 상품디테일 확인 불가
+//7. 로그인/로그아웃시 우측상단 텍스트 바뀜
+//8. 상품 검색 가능
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+<Routes>
+<Route path="/" element={<ProductAll/>}/>
+<Route path="/login" element={<Login/>}/>
+<Route path="Product/:id" element={<ProductDetail/>}/>
+</Routes>
     </div>
-  );
+  )
 }
 
 export default App;
