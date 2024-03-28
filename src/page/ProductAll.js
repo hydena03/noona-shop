@@ -13,7 +13,7 @@ getProducts()
     },[])
   return( 
   <div>
-<ProductCard />
+
     </div>
   )
 }
