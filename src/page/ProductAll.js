@@ -11,8 +11,9 @@ const getProducts = async ()=>{
     useEffect(()=>{
 getProducts()
     },[])
-  return( <div>
-<productCard />
+  return( 
+  <div>
+<ProductCard />
     </div>
   )
 }
