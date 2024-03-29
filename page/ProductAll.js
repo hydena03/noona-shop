@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import ProductCard from '../component/ProductCard'; // 파일명을 정확하게 대소문자 일치시켜 import
+import ProductCard from '../src/component/ProductCard'; 
 
 const ProductAll = () => {
   const [productList, setProductList] = useState([]);
