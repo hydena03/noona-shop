@@ -41,7 +41,7 @@ const ProductDetail = () => {
             </Dropdown.Menu>
           </Dropdown>
           <div>
-            <button className="detail-button">클릭하세요</button>
+            <button className="detail-button">주문하기</button>
           </div>
         </Col>
       </Row>
